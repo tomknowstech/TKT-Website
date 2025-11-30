@@ -532,3 +532,213 @@ footer .inner {
 .mt-2 {
   margin-top: 2rem;
 }
+
+/* Service Detail Page Styles */
+.service-page-layout {
+  display: grid;
+  grid-template-columns: 1fr 320px;
+  gap: 2rem;
+  margin-top: 1.5rem;
+}
+
+@media (max-width: 900px) {
+  .service-page-layout {
+    grid-template-columns: 1fr;
+  }
+}
+
+.back-link {
+  margin-bottom: 0.5rem;
+}
+
+.intro-text {
+  font-size: 1.15rem;
+}
+
+.section-heading {
+  margin-top: 2rem;
+}
+
+.spaced-list {
+  line-height: 2;
+}
+
+.tech-grid {
+  display: grid;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.tech-tag {
+  padding: 0.75rem 1rem;
+  background: white;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  font-size: 0.95rem;
+}
+
+.benefits-grid {
+  display: grid;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.benefit-row {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.benefit-row .icon {
+  color: var(--brand2);
+  stroke: currentColor;
+}
+
+.benefit-desc {
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+.service-page-sidebar {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 1.5rem;
+  position: sticky;
+  top: 90px;
+}
+
+.service-page-sidebar h3 {
+  margin-top: 0;
+}
+
+.service-page-sidebar p {
+  font-size: 0.95rem;
+  color: var(--muted);
+}
+
+.service-page-sidebar .btn,
+.service-page-sidebar .btn-ghost {
+  display: block;
+  text-align: center;
+}
+
+.service-page-sidebar .btn {
+  margin-bottom: 1rem;
+}
+
+.service-page-sidebar hr {
+  margin: 1.5rem 0;
+  border: none;
+  border-top: 1px solid var(--border);
+}
+
+.service-page-sidebar h4 {
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+}
+
+.related-services {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.related-services li {
+  margin-bottom: 0.5rem;
+}
+
+.cta-section {
+  margin-top: 3rem;
+  padding: 2rem;
+  background: linear-gradient(135deg, var(--brand), var(--brand2));
+  border-radius: 12px;
+  color: white;
+}
+
+.cta-section-inner {
+  max-width: 800px;
+}
+
+.cta-section h2 {
+  color: white;
+  margin-top: 0;
+}
+
+.cta-section p {
+  margin-bottom: 1.5rem;
+}
+
+.cta-section .cta {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.cta-section .btn-ghost {
+  border-color: rgba(255, 255, 255, 0.6);
+  color: white;
+  background: transparent;
+}
+
+.cta-section .btn-white {
+  background: white;
+  color: var(--brand2);
+}
+
+/* Form Validation Styles */
+.form-group input:invalid:not(:placeholder-shown),
+.form-group textarea:invalid:not(:placeholder-shown) {
+  border-color: #ef4444;
+}
+
+.form-group input:valid:not(:placeholder-shown),
+.form-group textarea:valid:not(:placeholder-shown) {
+  border-color: #22c55e;
+}
+
+.form-message {
+  padding: 1rem 1.25rem;
+  border-radius: 8px;
+  margin-bottom: 1.5rem;
+  font-weight: 500;
+}
+
+.form-message.success {
+  background: #dcfce7;
+  color: #166534;
+  border: 1px solid #86efac;
+}
+
+.form-message.error {
+  background: #fee2e2;
+  color: #991b1b;
+  border: 1px solid #fca5a5;
+}
+
+.form-message.hidden {
+  display: none;
+}
+
+.btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* Contact Page Alternate Section */
+.contact-alt {
+  text-align: center;
+  margin-top: 3rem;
+  padding: 2rem;
+  background: var(--surface);
+  border-radius: 12px;
+}
+
+.contact-alt-info {
+  margin: 0.5rem 0;
+}
+
+.contact-alt-note {
+  color: var(--muted);
+  font-size: 0.9rem;
+  margin-top: 1rem;
+}
