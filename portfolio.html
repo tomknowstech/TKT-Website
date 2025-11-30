@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Portfolio – Tom Knows Tech | Our Work</title>
+  <meta name="description" content="See examples of our work across Central Ohio. Desktop support, network installations, server deployments, and custom solutions for homes and businesses." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/main.css">
+</head>
+<body>
+  <header class="navbar">
+    <div class="container nav-inner">
+      <a href="/" class="brand">
+        <img src="/assets/img/TomKnowsTech_Logo.png" alt="Tom Knows Tech logo">
+      </a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="nav">Menu</button>
+      <nav id="nav" class="nav" aria-expanded="false">
+        <a href="/index.html">Home</a>
+        <a href="/services.html">Services</a>
+        <a href="/portfolio.html" class="active">Portfolio</a>
+        <a href="/contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-header">
+      <div class="container">
+        <h1>Our Work</h1>
+        <p>A selection of projects we've completed for homes and small businesses across Central Ohio. Every project is unique, but our approach is always the same: practical solutions, clear communication, and reliable results.</p>
+      </div>
+    </section>
+
+    <div class="container">
+      <div class="portfolio-grid">
+<div class="portfolio-item">
+          <div class="portfolio-content">
+            <h3>My Community Church Website</h3>
+            <p>Designed and built a clean, responsive site for a local church with pages for Home, Services, Contact, and Location. Focused on fast load times, clear navigation, and easy content updates.</p>
+            <div class="portfolio-tags">
+              <span class="tag">Web Development</span>
+              <span class="tag">Bootstrap</span>
+              <span class="tag">Static Site</span>
+            </div>
+          </div>
+        </div>
+
+<div class="portfolio-item">
+          <div class="portfolio-content">
+            <h3>Phone System Modernization Worksheet</h3>
+            <p>Created an easy-to-follow client worksheet to capture extensions, IVRs, ring groups, and call flows—usable by non‑technical stakeholders. Standardized discovery for VoIP migrations.</p>
+            <div class="portfolio-tags">
+              <span class="tag">Consulting</span>
+              <span class="tag">VoIP</span>
+              <span class="tag">Process Design</span>
+            </div>
+          </div>
+        </div>
+
+<div class="portfolio-item">
+          <div class="portfolio-content">
+            <h3>Proxmox Homelab & Automation Stack</h3>
+            <p>Built a Proxmox + TrueNAS backbone with Docker services and Ansible automation. Supports media, backups, dev/test workloads, and secure remote access via Tailscale.</p>
+            <div class="portfolio-tags">
+              <span class="tag">Proxmox</span>
+              <span class="tag">Docker</span>
+              <span class="tag">Ansible</span>
+            </div>
+          </div>
+        </div>
+
+<div class="portfolio-item">
+          <div class="portfolio-content">
+            <h3>AzuraCast Streaming & Web Dashboard</h3>
+            <p>Deployed a Dockerized internet radio backend with SSL, user management, and a friendly dashboard. Enabled remote show uploads and reliable scheduled playback.</p>
+            <div class="portfolio-tags">
+              <span class="tag">Media Tech</span>
+              <span class="tag">AzuraCast</span>
+              <span class="tag">Nginx Proxy Manager</span>
+            </div>
+          </div>
+        </div>
+
+<div class="portfolio-item">
+          <div class="portfolio-content">
+            <h3>Mobile Photo Booth System</h3>
+            <p>Engineered a portable photo booth with camera automation, instant sharing, and redundant storage—optimized for fast setup and reliable operation at events.</p>
+            <div class="portfolio-tags">
+              <span class="tag">Event Tech</span>
+              <span class="tag">Windows</span>
+              <span class="tag">Automation</span>
+            </div>
+          </div>
+        </div>
+
+<div class="portfolio-item">
+          <div class="portfolio-content">
+            <h3>Networking & Security Deployments</h3>
+            <p>Implemented pfSense firewalls, VLAN segmentation, DNS filtering, and site‑to‑site remote access for small orgs. Reduced lateral risk and improved manageability.</p>
+            <div class="portfolio-tags">
+              <span class="tag">Networking</span>
+              <span class="tag">pfSense</span>
+              <span class="tag">VLANs</span>
+            </div>
+          </div>
+        </div>
+
+<div class="portfolio-item">
+          <div class="portfolio-content">
+            <h3>Automation & Scripting Projects</h3>
+            <p>Developed PowerShell/Bash utilities for AD reports, SharePoint analytics, and Outlook signature generation—eliminating repetitive tasks.</p>
+            <div class="portfolio-tags">
+              <span class="tag">PowerShell</span>
+              <span class="tag">Bash</span>
+              <span class="tag">Automation</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section class="cta-band">
+      <div class="container row">
+        <div>
+          <strong>Have a project in mind?</strong>
+          <div>We'd love to hear about it and provide a clear estimate.</div>
+        </div>
+        <div>
+          <a class="btn-ghost" href="/contact.html">Get in touch</a>
+          <a class="btn" href="/services.html">View all services</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container inner">
+      © <span id="year"></span> Tom Knows Tech – Local tech consulting in Central Ohio.
+    </div>
+  </footer>
+
+  <script>
+    // Mobile nav toggle
+    const toggle = document.querySelector('.nav-toggle');
+    const nav = document.getElementById('nav');
+    if (toggle && nav) {
+      toggle.addEventListener('click', () => {
+        const ex = toggle.getAttribute('aria-expanded') === 'true';
+        toggle.setAttribute('aria-expanded', String(!ex));
+        nav.setAttribute('aria-expanded', String(!ex));
+      });
+    }
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

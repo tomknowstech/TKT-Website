@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact – Tom Knows Tech | Get in Touch</title>
+  <meta name="description" content="Contact Tom Knows Tech for IT consulting services in Central Ohio. Get a quick quote for desktop support, networking, servers, and more." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/main.css">
+</head>
+<body>
+  <header class="navbar">
+    <div class="container nav-inner">
+      <a href="/" class="brand">
+        <img src="/assets/img/TomKnowsTech_Logo.png" alt="Tom Knows Tech logo">
+      </a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="nav">Menu</button>
+      <nav id="nav" class="nav" aria-expanded="false">
+        <a href="/index.html">Home</a>
+        <a href="/services.html">Services</a>
+        <a href="/portfolio.html">Portfolio</a>
+        <a href="/contact.html" class="active">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-header">
+      <div class="container">
+        <h1>Get in Touch</h1>
+        <p>Have a question or need help with a tech project? Fill out the form below and we'll get back to you within one business day with options and a clear estimate.</p>
+      </div>
+    </section>
+
+    <div class="container">
+      <form class="contact-form" action="https://formspree.io/f/movpojkn" method="POST">
+        <div class="form-group">
+          <label for="name">Name *</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email *</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+
+        <div class="form-group">
+          <label for="phone">Phone</label>
+          <input type="tel" id="phone" name="phone">
+        </div>
+
+        <div class="form-group">
+          <label for="service">What can we help with?</label>
+          <select id="service" name="service">
+            <option value="">Select a service...</option>
+            <option value="desktop-support">Desktop & Server Support</option>
+            <option value="filemaker">FileMaker Development</option>
+            <option value="networking">Networking & Wi-Fi</option>
+            <option value="phone-systems">Phone Systems</option>
+            <option value="servers">Server Installation</option>
+            <option value="security-cameras">Security Cameras</option>
+            <option value="virtualization">Virtualization & Cloud</option>
+            <option value="websites">Website Development</option>
+            <option value="other">Other / Not Sure</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="message">Tell us about your project *</label>
+          <textarea id="message" name="message" required placeholder="Please describe what you need help with, any relevant details, and your preferred timeline."></textarea>
+        </div>
+
+        <button type="submit" class="btn">Send Message</button>
+      </form>
+
+      <div style="text-align: center; margin-top: 3rem; padding: 2rem; background: var(--surface); border-radius: 12px;">
+        <h3>Prefer to reach out directly?</h3>
+        <p style="margin: 0.5rem 0;">
+          <strong>Email:</strong> <a href="mailto:contact@tomknows.tech">contact@tomknowstech.com</a><br>
+          <strong>Phone:</strong> <a href="tel:+17409142012">740-914-2012</a>
+        </p>
+        <p style="color: var(--muted); font-size: 0.9rem; margin-top: 1rem;">
+          Serving Columbus, Delaware, Marion, and Central Ohio<br>
+          On-site and remote support available
+        </p>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container inner">
+      © <span id="year"></span> Tom Knows Tech – Local tech consulting in Central Ohio.
+    </div>
+  </footer>
+
+  <script>
+    // Mobile nav toggle
+    const toggle = document.querySelector('.nav-toggle');
+    const nav = document.getElementById('nav');
+    if (toggle && nav) {
+      toggle.addEventListener('click', () => {
+        const ex = toggle.getAttribute('aria-expanded') === 'true';
+        toggle.setAttribute('aria-expanded', String(!ex));
+        nav.setAttribute('aria-expanded', String(!ex));
+      });
+    }
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

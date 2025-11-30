@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Tom Knows Tech – Local Tech Consulting in Central Ohio</title>
+  <meta name="description" content="Friendly, modern IT help for home & small business: desktop support, networking, backups, websites, and more in Central Ohio." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/main.css">
+</head>
+<body>
+  <!-- Inline SVG sprite for icons (no external deps) -->
+  <svg xmlns="http://www.w3.org/2000/svg" style="position:absolute;width:0;height:0;overflow:hidden">
+    <symbol id="icon-desktop" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="12" rx="2"/><path d="M8 20h8M12 16v4"/></symbol>
+    <symbol id="icon-network" viewBox="0 0 24 24"><circle cx="12" cy="5" r="3"/><circle cx="5" cy="19" r="3"/><circle cx="19" cy="19" r="3"/><path d="M12 8v4M9 12H6M15 12h3M9 12l-3 4M15 12l3 4"/></symbol>
+    <symbol id="icon-shield" viewBox="0 0 24 24"><path d="M12 2l8 4v6c0 5-3.6 8.5-8 10-4.4-1.5-8-5-8-10V6l8-4z"/></symbol>
+    <symbol id="icon-globe" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15 15 0 0 1 0 20M12 2a15 15 0 0 0 0 20"/></symbol>
+  </svg>
+
+  <header class="navbar">
+    <div class="container nav-inner">
+      <a href="/" class="brand">
+        <img src="/assets/img/TomKnowsTech_Logo.png" alt="Tom Knows Tech logo">
+      </a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="nav">Menu</button>
+      <nav id="nav" class="nav" aria-expanded="false">
+        <a href="/index.html" class="active">Home</a>
+        <a href="/services.html">Services</a>
+        <a href="/portfolio.html">Portfolio</a>
+        <a href="/contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-wrap">
+        <div>
+          <p class="kicker">Central Ohio • Local Tech Consulting</p>
+          <h1>Friendly, modern IT help for home & small business.</h1>
+          <p>We're locally owned and operated in Central Ohio. From dependable Wi-Fi and server maintenance to clean, secure websites, we focus on practical solutions that just work—without the bloat.</p>
+          <div class="cta">
+            <a class="btn" href="/services.html">Explore services</a>
+            <a class="btn-ghost" href="/contact.html">Get a quick quote</a>
+          </div>
+        </div>
+        <div class="hero-card">
+          <strong>What can we help with today?</strong>
+          <ul>
+            <li>PC/Mac tune-ups & new device setup</li>
+            <li>Whole-home/office Wi-Fi fixes</li>
+            <li>Backups & photo protection</li>
+            <li>Simple websites with contact forms</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="container section">
+      <h2>What we do</h2>
+      <div class="grid services-preview">
+        <div class="service">
+          <svg class="icon"><use href="#icon-desktop"/></svg>
+          <div>
+            <strong>Desktop & Server Support</strong>
+            <div class="muted">Setup, troubleshooting, upgrades, and ongoing care.</div>
+          </div>
+        </div>
+        <div class="service">
+          <svg class="icon"><use href="#icon-network"/></svg>
+          <div>
+            <strong>Networking & Wi-Fi</strong>
+            <div class="muted">Mesh Wi-Fi, router/firewall setup, and better coverage.</div>
+          </div>
+        </div>
+        <div class="service">
+          <svg class="icon"><use href="#icon-shield"/></svg>
+          <div>
+            <strong>Backup & Data Protection</strong>
+            <div class="muted">Local + cloud backups with restore verification.</div>
+          </div>
+        </div>
+        <div class="service">
+          <svg class="icon"><use href="#icon-globe"/></svg>
+          <div>
+            <strong>Websites (Static) & Hosting</strong>
+            <div class="muted">Fast, secure sites with forms and analytics.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="trust">
+      <div class="container trust-inner">
+        <small>Serving Central Ohio since 2016</small>
+        <small>Transparent estimates</small>
+        <small>No long-term contracts</small>
+        <small>On-site or remote support</small>
+      </div>
+    </section>
+
+    <section class="areas">
+      <div class="container wrap">
+        <span>Areas we serve:</span>
+        <span class="badge">Columbus</span>
+        <span class="badge">Delaware</span>
+        <span class="badge">Marion</span>
+        <span class="badge">Central Ohio</span>
+      </div>
+    </section>
+
+    <section class="cta-band">
+      <div class="container row">
+        <div>
+          <strong>Need help now?</strong>
+          <div>Tell us what's going on and we'll reply with options and a clear estimate.</div>
+        </div>
+        <div>
+          <a class="btn-ghost" href="/contact.html">Contact us</a>
+          <a class="btn" href="/services.html">View services</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container inner">
+      © <span id="y"></span> Tom Knows Tech – Local tech consulting in Central Ohio.
+    </div>
+  </footer>
+
+  <script>
+    // Mobile nav toggle
+    const toggle = document.querySelector('.nav-toggle');
+    const nav = document.getElementById('nav');
+    if (toggle && nav) {
+      toggle.addEventListener('click', () => {
+        const ex = toggle.getAttribute('aria-expanded') === 'true';
+        toggle.setAttribute('aria-expanded', String(!ex));
+        nav.setAttribute('aria-expanded', String(!ex));
+      });
+    }
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
