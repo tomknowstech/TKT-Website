@@ -38,6 +38,8 @@
     <div class="container">
       <form class="contact-form" id="contact-form" action="https://formspree.io/f/movpojkn" method="POST">
         <div id="form-message" class="form-message hidden"></div>
+        <!-- Honeypot field - hidden from users, catches bots -->
+        <input type="text" name="_gotcha" class="honeypot" tabindex="-1" autocomplete="off">
         <div class="form-group">
           <label for="name">Name *</label>
           <input type="text" id="name" name="name" required placeholder=" ">

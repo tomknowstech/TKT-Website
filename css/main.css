@@ -742,3 +742,10 @@ footer .inner {
   font-size: 0.9rem;
   margin-top: 1rem;
 }
+
+/* Honeypot - hide from humans, bots will fill it */
+.honeypot {
+  position: absolute;
+  left: -9999px;
+  top: -9999px;
+}
