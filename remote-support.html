@@ -8,102 +8,6 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/css/main.css">
-  <style>
-    .remote-hero {
-      background: linear-gradient(135deg, var(--brand), var(--brand2));
-      color: white;
-      padding: 3rem 0;
-      margin-top: 0;
-    }
-    .remote-hero h1 {
-      color: white;
-      margin-top: 0;
-    }
-    .remote-hero p {
-      color: rgba(255, 255, 255, 0.95);
-    }
-    .download-card {
-      background: white;
-      border: 2px solid var(--brand2);
-      border-radius: 16px;
-      padding: 2.5rem;
-      margin: 2rem auto;
-      max-width: 600px;
-      box-shadow: 0 20px 40px rgba(37, 99, 235, 0.15);
-      text-align: center;
-    }
-    .download-btn {
-      display: inline-flex;
-      align-items: center;
-      gap: 0.75rem;
-      padding: 1.2rem 2rem;
-      background: linear-gradient(135deg, var(--brand), var(--brand2));
-      color: white;
-      border-radius: 12px;
-      font-weight: 700;
-      font-size: 1.1rem;
-      text-decoration: none;
-      box-shadow: 0 10px 25px rgba(37, 99, 235, 0.3);
-      transition: transform 0.15s ease, box-shadow 0.15s ease;
-      margin-top: 1rem;
-    }
-    .download-btn:hover {
-      transform: translateY(-3px);
-      box-shadow: 0 15px 35px rgba(37, 99, 235, 0.4);
-      text-decoration: none;
-    }
-    .download-icon {
-      width: 24px;
-      height: 24px;
-      fill: white;
-    }
-    .step-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 1.5rem;
-      margin-top: 2rem;
-    }
-    .step {
-      background: var(--surface);
-      border: 1px solid var(--border);
-      border-radius: 12px;
-      padding: 1.5rem;
-      text-align: center;
-    }
-    .step-number {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      width: 40px;
-      height: 40px;
-      background: linear-gradient(135deg, var(--brand), var(--brand2));
-      color: white;
-      border-radius: 50%;
-      font-weight: 700;
-      font-size: 1.2rem;
-      margin-bottom: 1rem;
-    }
-    .security-badge {
-      display: inline-flex;
-      align-items: center;
-      gap: 0.5rem;
-      padding: 0.5rem 1rem;
-      background: #f0fdf4;
-      border: 1px solid #86efac;
-      border-radius: 999px;
-      color: #166534;
-      font-size: 0.9rem;
-      font-weight: 600;
-      margin-top: 1rem;
-    }
-    .check-icon {
-      width: 18px;
-      height: 18px;
-      stroke: #16a34a;
-      fill: none;
-      stroke-width: 3;
-    }
-  </style>
 </head>
 <body>
   <!-- SVG Icons -->
@@ -134,6 +38,7 @@
       <nav id="nav" class="nav" aria-expanded="false">
         <a href="/index.html">Home</a>
         <a href="/services.html">Services</a>
+        <a href="/remote-support.html">Remote Support</a>
         <a href="/portfolio.html">Portfolio</a>
         <a href="/contact.html">Contact</a>
       </nav>
@@ -142,21 +47,21 @@
 
   <main>
     <section class="remote-hero">
-      <div class="container" style="text-align: center;">
+      <div class="container text-center">
         <h1>Remote Support</h1>
-        <p style="font-size: 1.15rem; max-width: 650px; margin: 0 auto;">Get instant technical assistance from anywhere. Download our secure remote support tool to allow our technicians to help you in real-time.</p>
+        <p>Get instant technical assistance from anywhere. Download our secure remote support tool to allow our technicians to help you in real-time.</p>
       </div>
     </section>
 
     <div class="container">
       <div class="download-card">
-        <svg style="width: 64px; height: 64px; stroke: var(--brand2); fill: none; stroke-width: 1.5; margin-bottom: 1rem;">
+        <svg class="monitor-icon">
           <use href="#icon-monitor"/>
         </svg>
-        <h2 style="margin: 0.5rem 0;">Download Remote Support Tool</h2>
-        <p style="color: var(--muted); margin-bottom: 0;">Click the button below to download our secure remote support application. This will allow our technician to assist you remotely.</p>
+        <h2>Download Remote Support Tool</h2>
+        <p>Click the button below to download our secure remote support application. This will allow our technician to assist you remotely.</p>
         
-        <a href="https://mc.tomknows.tech/agentinvite?c=zC5eiBFW1kfQpLtyAYhr5nWpQD8s9PyKHaSKycGVWGMkuVybkzczmFAeqop7s8XxbXIG5uxjG@SQyKtICDhkB$sUqJO@lEa0MuyVEZvyAHN$f6ji03LbOuEP1zDJXulCCTn0wg7iWfNG3bL$CyNN6dshzMrOURAVwV5mJHDtHTTpZEPPQht9svWFoBeSlcnyoRFHekE=" class="download-btn" download>
+        <a href="https://mc.tomknows.tech/agentinvite?c=zC5eiBFW1kfQpLtyAYhr5nWpQD8s9PyKHaSKycGVWGMkuVybkzczmFAeqop7s8XxbXIG5uxjG@SQyKtICDhkB$sUqJO@lEa0MuyVEZvyAHN$f6ji03LbOuEP1zDJXulCCTn0wg7iWfNG3bL$CyNN6dshzMrOURAVwV5mJHDtHTTpZEPPQht9svWFoBeSlcnyoRFHekE=" class="download-btn">
           <svg class="download-icon">
             <use href="#icon-download"/>
           </svg>
@@ -170,98 +75,96 @@
           Secure & Encrypted
         </div>
 
-        <p style="font-size: 0.85rem; color: var(--muted); margin-top: 1.5rem; margin-bottom: 0;">
-          <strong>Note:</strong> Only run this when instructed by a Tom Knows Tech technician.
-        </p>
+        <p><strong>Note:</strong> Only run this when instructed by a Tom Knows Tech technician.</p>
       </div>
 
-      <section style="margin-top: 3rem;">
-        <h2 style="text-align: center;">How Remote Support Works</h2>
+      <section class="section">
+        <h2>How Remote Support Works</h2>
         <div class="step-grid">
           <div class="step">
             <div class="step-number">1</div>
-            <h3 style="margin: 0.5rem 0;">Contact Us</h3>
-            <p style="color: var(--muted); font-size: 0.95rem; margin: 0;">Call or email us to schedule a remote support session.</p>
+            <h3>Contact Us</h3>
+            <p>Call or email us to schedule a remote support session.</p>
           </div>
 
           <div class="step">
             <div class="step-number">2</div>
-            <h3 style="margin: 0.5rem 0;">Download Tool</h3>
-            <p style="color: var(--muted); font-size: 0.95rem; margin: 0;">Click the download button above when your technician asks you to.</p>
+            <h3>Download Tool</h3>
+            <p>Click the download button above when your technician asks you to.</p>
           </div>
 
           <div class="step">
             <div class="step-number">3</div>
-            <h3 style="margin: 0.5rem 0;">Run Application</h3>
-            <p style="color: var(--muted); font-size: 0.95rem; margin: 0;">Open the downloaded file and share the code with your technician.</p>
+            <h3>Run Application</h3>
+            <p>Open the downloaded file and share the code with your technician.</p>
           </div>
 
           <div class="step">
             <div class="step-number">4</div>
-            <h3 style="margin: 0.5rem 0;">We Connect</h3>
-            <p style="color: var(--muted); font-size: 0.95rem; margin: 0;">Your technician will connect securely and start helping you.</p>
+            <h3>We Connect</h3>
+            <p>Your technician will connect securely and start helping you.</p>
           </div>
         </div>
       </section>
 
-      <section style="margin-top: 3rem; background: var(--surface); border-radius: 12px; padding: 2rem;">
+      <section class="section">
         <h2>Why Remote Support?</h2>
-        <div style="display: grid; gap: 1rem; margin-top: 1.5rem;">
-          <div style="display: flex; gap: 1rem; align-items: start;">
-            <svg style="width: 24px; height: 24px; stroke: var(--brand2); fill: none; stroke-width: 2.5; min-width: 24px; margin-top: 0.2rem;">
+        <div class="benefits-list">
+          <div class="benefit-item">
+            <svg class="benefit-icon">
               <use href="#icon-check"/>
             </svg>
             <div>
               <strong>Instant Help</strong>
-              <div style="color: var(--muted); font-size: 0.95rem;">No need to wait for an on-site visit—we can help you right away.</div>
+              <div>No need to wait for an on-site visit—we can help you right away.</div>
             </div>
           </div>
 
-          <div style="display: flex; gap: 1rem; align-items: start;">
-            <svg style="width: 24px; height: 24px; stroke: var(--brand2); fill: none; stroke-width: 2.5; min-width: 24px; margin-top: 0.2rem;">
+          <div class="benefit-item">
+            <svg class="benefit-icon">
               <use href="#icon-check"/>
             </svg>
             <div>
               <strong>Secure Connection</strong>
-              <div style="color: var(--muted); font-size: 0.95rem;">All sessions are encrypted and secure. You control access at all times.</div>
+              <div>All sessions are encrypted and secure. You control access at all times.</div>
             </div>
           </div>
 
-          <div style="display: flex; gap: 1rem; align-items: start;">
-            <svg style="width: 24px; height: 24px; stroke: var(--brand2); fill: none; stroke-width: 2.5; min-width: 24px; margin-top: 0.2rem;">
+          <div class="benefit-item">
+            <svg class="benefit-icon">
               <use href="#icon-check"/>
             </svg>
             <div>
               <strong>Cost-Effective</strong>
-              <div style="color: var(--muted); font-size: 0.95rem;">Save time and money by avoiding travel fees for simple fixes.</div>
+              <div>Save time and money by avoiding travel fees for simple fixes.</div>
             </div>
           </div>
 
-          <div style="display: flex; gap: 1rem; align-items: start;">
-            <svg style="width: 24px; height: 24px; stroke: var(--brand2); fill: none; stroke-width: 2.5; min-width: 24px; margin-top: 0.2rem;">
+          <div class="benefit-item">
+            <svg class="benefit-icon">
               <use href="#icon-check"/>
             </svg>
             <div>
               <strong>One-Time Use</strong>
-              <div style="color: var(--muted); font-size: 0.95rem;">The connection ends when you close the app. No permanent software installed.</div>
+              <div>The connection ends when you close the app. No permanent software installed.</div>
             </div>
           </div>
 
-          <div style="display: flex; gap: 1rem; align-items: start;">
-            <svg style="width: 24px; height: 24px; stroke: var(--brand2); fill: none; stroke-width: 2.5; min-width: 24px; margin-top: 0.2rem;">
+          <div class="benefit-item">
+            <svg class="benefit-icon">
               <use href="#icon-check"/>
             </svg>
             <div>
               <strong>See Everything We Do</strong>
-              <div style="color: var(--muted); font-size: 0.95rem;">Watch as we work on your computer. You can disconnect at any time.</div>
+              <div>Watch as we work on your computer. You can disconnect at any time.</div>
             </div>
           </div>
         </div>
       </section>
 
-      <section style="margin-top: 3rem; background: #fef3c7; border: 1px solid #fbbf24; border-radius: 12px; padding: 2rem;">
-        <h3 style="margin-top: 0; color: #92400e;">Important Security Notes</h3>
-        <ul style="color: #78350f; line-height: 1.8; margin: 0;">
+      <section class="security-warning">
+        <h3>Important Security Notes</h3>
+        <ul>
           <li><strong>Only run this tool when scheduled</strong> with a Tom Knows Tech technician</li>
           <li><strong>We will never ask you</strong> to download this via email or unsolicited calls</li>
           <li><strong>You control the session</strong> and can end it at any time by closing the application</li>
@@ -270,12 +173,16 @@
         </ul>
       </section>
 
-      <section style="margin-top: 3rem; text-align: center; padding: 2rem; background: linear-gradient(135deg, var(--brand), var(--brand2)); border-radius: 12px; color: white;">
-        <h2 style="color: white; margin-top: 0;">Need Help Right Now?</h2>
-        <p style="margin-bottom: 1.5rem;">Call us to schedule a remote support session, or if you need on-site service.</p>
-        <div style="display: flex; gap: 1rem; flex-wrap: wrap; justify-content: center;">
-          <a href="tel:+16145551234" class="btn" style="background: white; color: var(--brand2);">Call (614) 555-1234</a>
-          <a href="/contact.html" class="btn-ghost" style="border-color: rgba(255,255,255,0.6); color: white; background: transparent;">Contact Form</a>
+      <section class="cta-band">
+        <div class="container row">
+          <div>
+            <strong>Need Help Right Now?</strong>
+            <div>Call us to schedule a remote support session, or if you need on-site service.</div>
+          </div>
+          <div>
+            <a class="btn-ghost" href="tel:+16145551234">Call (614) 555-1234</a>
+            <a class="btn" href="/contact.html">Contact Form</a>
+          </div>
         </div>
       </section>
     </div>
@@ -283,11 +190,12 @@
 
   <footer>
     <div class="container inner">
-      © <span id="year"></span> Tom Knows Tech – Local tech consulting in Central Ohio.
+      © <span id="y"></span> Tom Knows Tech – Serving Central Ohio with dependable IT consulting.
     </div>
   </footer>
 
   <script>
+    // Mobile nav toggle
     const toggle = document.querySelector('.nav-toggle');
     const nav = document.getElementById('nav');
     if (toggle && nav) {
@@ -297,7 +205,7 @@
         nav.setAttribute('aria-expanded', String(!ex));
       });
     }
-    document.getElementById('year').textContent = new Date().getFullYear();
+    document.getElementById('y').textContent = new Date().getFullYear();
   </script>
 </body>
 </html>

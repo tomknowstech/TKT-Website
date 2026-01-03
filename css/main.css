@@ -533,224 +533,180 @@ footer .inner {
   margin-top: 2rem;
 }
 
-/* Service Detail Page Styles */
+/* Service page layout */
 .service-page-layout {
   display: grid;
-  grid-template-columns: 1fr 320px;
+  grid-template-columns: 2fr 1fr;
   gap: 2rem;
-  margin-top: 1.5rem;
+  margin-top: 2rem;
 }
 
 @media (max-width: 900px) {
   .service-page-layout {
     grid-template-columns: 1fr;
   }
+  
+  .service-page-layout aside {
+    order: -1; /* Move sidebar to top on mobile */
+  }
+  
+  .service-page-sidebar {
+    position: static !important; /* Disable sticky on mobile */
+  }
 }
 
-.back-link {
-  margin-bottom: 0.5rem;
+/* Remote Support Page */
+.remote-hero {
+  background: linear-gradient(135deg, var(--brand), var(--brand2));
+  color: white;
+  padding: 3rem 0;
 }
 
-.intro-text {
-  font-size: 1.15rem;
+.remote-hero h1 {
+  color: white;
+  margin-top: 0;
 }
 
-.section-heading {
+.remote-hero p {
+  color: rgba(255, 255, 255, 0.95);
+}
+
+.download-card {
+  background: white;
+  border: 2px solid var(--brand2);
+  border-radius: 16px;
+  padding: 2.5rem;
+  margin: 2rem auto;
+  max-width: 600px;
+  box-shadow: 0 20px 40px rgba(37, 99, 235, 0.15);
+  text-align: center;
+}
+
+.download-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 1.2rem 2rem;
+  background: linear-gradient(135deg, var(--brand), var(--brand2));
+  color: white;
+  border-radius: 12px;
+  font-weight: 700;
+  font-size: 1.1rem;
+  text-decoration: none;
+  box-shadow: 0 10px 25px rgba(37, 99, 235, 0.3);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+  margin-top: 1rem;
+}
+
+.download-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 15px 35px rgba(37, 99, 235, 0.4);
+  text-decoration: none;
+}
+
+.download-icon {
+  width: 24px;
+  height: 24px;
+  fill: white;
+}
+
+.step-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
   margin-top: 2rem;
 }
 
-.spaced-list {
-  line-height: 2;
-}
-
-.tech-grid {
-  display: grid;
-  gap: 0.5rem;
-  margin-top: 1rem;
-}
-
-.tech-tag {
-  padding: 0.75rem 1rem;
-  background: white;
-  border: 1px solid var(--border);
-  border-radius: 8px;
-  font-size: 0.95rem;
-}
-
-.benefits-grid {
-  display: grid;
-  gap: 1rem;
-  margin-top: 1rem;
-}
-
-.benefit-row {
-  display: flex;
-  gap: 0.75rem;
-}
-
-.benefit-row .icon {
-  color: var(--brand2);
-  stroke: currentColor;
-}
-
-.benefit-desc {
-  color: var(--muted);
-  font-size: 0.95rem;
-}
-
-.service-page-sidebar {
+.step {
   background: var(--surface);
   border: 1px solid var(--border);
   border-radius: 12px;
   padding: 1.5rem;
-  position: sticky;
-  top: 90px;
-}
-
-.service-page-sidebar h3 {
-  margin-top: 0;
-}
-
-.service-page-sidebar p {
-  font-size: 0.95rem;
-  color: var(--muted);
-}
-
-.service-page-sidebar .btn,
-.service-page-sidebar .btn-ghost {
-  display: block;
   text-align: center;
 }
 
-.service-page-sidebar .btn {
+.step-number {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background: linear-gradient(135deg, var(--brand), var(--brand2));
+  color: white;
+  border-radius: 50%;
+  font-weight: 700;
+  font-size: 1.2rem;
   margin-bottom: 1rem;
 }
 
-.service-page-sidebar hr {
-  margin: 1.5rem 0;
-  border: none;
-  border-top: 1px solid var(--border);
-}
-
-.service-page-sidebar h4 {
-  margin-bottom: 0.5rem;
-  font-size: 1rem;
-}
-
-.related-services {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.related-services li {
-  margin-bottom: 0.5rem;
-}
-
-.cta-section {
-  margin-top: 3rem;
-  padding: 2rem;
-  background: linear-gradient(135deg, var(--brand), var(--brand2));
-  border-radius: 12px;
-  color: white;
-}
-
-.cta-section-inner {
-  max-width: 800px;
-}
-
-.cta-section h2 {
-  color: white;
-  margin-top: 0;
-}
-
-.cta-section p {
-  margin-bottom: 1.5rem;
-}
-
-.cta-section .cta {
-  display: flex;
-  gap: 1rem;
-  flex-wrap: wrap;
-}
-
-.cta-section .btn-ghost {
-  border-color: rgba(255, 255, 255, 0.6);
-  color: white;
-  background: transparent;
-}
-
-.cta-section .btn-white {
-  background: white;
-  color: var(--brand2);
-}
-
-/* Form Validation Styles */
-.form-group input:invalid:not(:placeholder-shown),
-.form-group textarea:invalid:not(:placeholder-shown) {
-  border-color: #ef4444;
-}
-
-.form-group input:valid:not(:placeholder-shown),
-.form-group textarea:valid:not(:placeholder-shown) {
-  border-color: #22c55e;
-}
-
-.form-message {
-  padding: 1rem 1.25rem;
-  border-radius: 8px;
-  margin-bottom: 1.5rem;
-  font-weight: 500;
-}
-
-.form-message.success {
-  background: #dcfce7;
-  color: #166534;
+.security-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  background: #f0fdf4;
   border: 1px solid #86efac;
-}
-
-.form-message.error {
-  background: #fee2e2;
-  color: #991b1b;
-  border: 1px solid #fca5a5;
-}
-
-.form-message.hidden {
-  display: none;
-}
-
-.btn:disabled {
-  opacity: 0.6;
-  cursor: not-allowed;
-}
-
-/* Contact Page Alternate Section */
-.contact-alt {
-  text-align: center;
-  margin-top: 3rem;
-  padding: 2rem;
-  background: var(--surface);
-  border-radius: 12px;
-}
-
-.contact-alt-info {
-  margin: 0.5rem 0;
-}
-
-.contact-alt-note {
-  color: var(--muted);
+  border-radius: 999px;
+  color: #166534;
   font-size: 0.9rem;
+  font-weight: 600;
   margin-top: 1rem;
 }
 
-/* Honeypot - hide from humans, bots will fill it */
-.honeypot {
-  position: absolute;
-  left: -9999px;
-  top: -9999px;
-  opacity: 0;
-  height: 0;
-  width: 0;
-  z-index: -1;
-  pointer-events: none;
+.security-warning {
+  background: #fef3c7;
+  border: 1px solid #fbbf24;
+  border-radius: 12px;
+  padding: 2rem;
+  margin-top: 3rem;
+}
+
+.security-warning h3 {
+  margin-top: 0;
+  color: #92400e;
+}
+
+.security-warning ul {
+  color: #78350f;
+  line-height: 1.8;
+  margin: 0;
+}
+
+.benefits-list {
+  display: grid;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.benefit-item {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+}
+
+.benefit-icon {
+  width: 24px;
+  height: 24px;
+  min-width: 24px;
+  stroke: var(--brand2);
+  fill: none;
+  stroke-width: 2.5;
+  margin-top: 0.2rem;
+}
+
+.monitor-icon {
+  width: 64px;
+  height: 64px;
+  stroke: var(--brand2);
+  fill: none;
+  stroke-width: 1.5;
+  margin-bottom: 1rem;
+}
+
+.check-icon {
+  width: 18px;
+  height: 18px;
+  stroke: #16a34a;
+  fill: none;
+  stroke-width: 3;
 }
