@@ -1,73 +1,79 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://tomknows.tech</loc>
+    <loc>https://tomknowstech.com/</loc>
     <lastmod>2025-11-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://tomknows.tech/services.html</loc>
+    <loc>https://tomknowstech.com/services.html</loc>
     <lastmod>2025-11-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://tomknows.tech/portfolio.html</loc>
+    <loc>https://tomknowstech.com/portfolio.html</loc>
     <lastmod>2025-11-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://tomknows.tech/contact.html</loc>
+    <loc>https://tomknowstech.com/contact.html</loc>
     <lastmod>2025-11-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://tomknows.tech/services/desktop-server-support.html</loc>
+    <loc>https://tomknowstech.com/remote-support.html</loc>
+    <lastmod>2025-11-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://tomknowstech.com/services/desktop-server-support.html</loc>
     <lastmod>2025-11-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://tomknows.tech/services/filemaker.html</loc>
+    <loc>https://tomknowstech.com/services/filemaker.html</loc>
     <lastmod>2025-11-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://tomknows.tech/services/networking.html</loc>
+    <loc>https://tomknowstech.com/services/networking.html</loc>
     <lastmod>2025-11-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://tomknows.tech/services/phone-systems.html</loc>
+    <loc>https://tomknowstech.com/services/phone-systems.html</loc>
     <lastmod>2025-11-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://tomknows.tech/services/servers.html</loc>
+    <loc>https://tomknowstech.com/services/servers.html</loc>
     <lastmod>2025-11-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://tomknows.tech/services/security-cameras.html</loc>
+    <loc>https://tomknowstech.com/services/security-cameras.html</loc>
     <lastmod>2025-11-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://tomknows.tech/services/virtualization.html</loc>
+    <loc>https://tomknowstech.com/services/virtualization.html</loc>
     <lastmod>2025-11-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://tomknows.tech/services/custom-services.html</loc>
+    <loc>https://tomknowstech.com/services/custom-services.html</loc>
     <lastmod>2025-11-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
